@@ -3,11 +3,6 @@ import { View, Image, Text, StyleSheet, Modal, Button } from 'react-native'
 // import Menu, {MenuItem, MenuDivider} from 'react-native-material-menu';
 // import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { Menu, MenuProvider, MenuOptions, MenuOption, MenuTrigger, renderers} from "react-native-popup-menu";
-
-modal1 = () => {
-  alert('tesss')
-  }
   
   export default function header({ navigation, title }) {
       return (
@@ -16,7 +11,7 @@ modal1 = () => {
               <View>
                   <Text style={styles.headerText}>{ title }</Text>
               </View>
-                  <MaterialIcons name="more_vert" size={28} style={styles.icon2} onPress={() => this.modal1()}></MaterialIcons>
+                  
           </View>
       )
   }
@@ -26,7 +21,7 @@ modal1 = () => {
           width: '100%',
           height: '100%',
           flexDirection: 'row',
-          alignItems: 'center',
+          //alignItems: 'center',
           justifyContent: 'center',
       },
       headerText: {
